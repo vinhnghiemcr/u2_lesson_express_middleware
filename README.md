@@ -1,8 +1,10 @@
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) SOFTWARE ENGINEERING IMMERSIVE
-
 # Express Middleware
 
-### Learning Objectives
+## Overview
+
+In this lesson we'll learn how to use functions called `middleware`. Middleware is a core concept of Express and allow us great flexibility in building and structuring our servers. Middleware helps us handle different conditions during the request/response lifecycle and assists us with making our code more modular.
+
+## Objectives
 
 - Implement Server middleware
 - Use 3rd party middleware
@@ -12,8 +14,8 @@
 
 - Fork And Clone this repository
 - `cd` into your `Express-Middleware` folder
-- `npm i` or `npm install` to install our dependencies.
-- `npm dev` to check your installation completed successfully.
+- `npm i` or `npm install` to install the dependencies.
+- `npm run dev` to check your installation completed successfully.
 - Have either [Insomnia](https://insomnia.rest/download/core/?) or [Postman](https://www.postman.com/downloads/) ready to go!
   A basic Express app has been provided for you.
 
@@ -34,7 +36,7 @@ app.listen(PORT, () => {
 
 Middleware can be described as a function that run's in the middle of a request or before. From the Express documentation:
 
-> Middleware functions are functions that have access to the request object (req), the response object (res), and the next middleware function in the application’s request-response cycle. The next middleware function is commonly denoted by a variable named next.
+> Middleware functions are functions that have access to the request object (req), the response object (res), and the `next` middleware function in the application’s request-response cycle. The next middleware function is commonly denoted by a variable named next.
 >
 > Middleware functions can perform the following tasks:
 >
@@ -42,6 +44,8 @@ Middleware can be described as a function that run's in the middle of a request 
 > - Make changes to the request and the response objects.
 > - End the request-response cycle.
 > - Call the next middleware function in the stack.
+
+![middleware](images/express_request.png)
 
 ### Utilizing 3rd Party Middleware
 
@@ -146,3 +150,13 @@ You've just built your own middleware!
 ## You Do
 
 Create 4 routes, one for each `http` method. Each route should have their own middleware function that `console.log`'s the type of `http` method the route is for. Create a function after your middleware that sends a response saying: `the http type of {httpType} of request is complete`.
+
+## Recap
+
+In this lesson we built and utilized middleware. We implemented 3rd part middleware like `cors` and `body-parser`. We also built our own middleware functions.
+Remember `middleware` functions are functions that execute as long as there is a `next` function in the request stack.
+
+## Resources
+
+- [Express](https://expressjs.com/)
+- [Express Middleware](http://expressjs.com/en/guide/using-middleware.html#using-middleware)

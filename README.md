@@ -1,5 +1,7 @@
 # Express Middleware
 
+![middleware](https://videos.teamtreehouse.com/stills/TH_RESTAPIwithExpress_S2V2-stills-4.jpg?token=61afd369_9da0962e55f1dfb72bdc7fa07126dfea8a9adf8d)
+
 ## Overview
 
 In this lesson we'll learn how to use functions called `middleware`. Middleware is a core concept of Express and allow us great flexibility in building and structuring our servers. Middleware helps us handle different conditions during the request/response lifecycle and assists us with making our code more modular.
@@ -102,6 +104,9 @@ More On the urlEncoded method here:
 [bodyParser.urlEncoded](https://github.com/expressjs/body-parser#bodyparserurlencodedoptions)
 
 We've successfully implemented 3rd party middleware with our app!
+
+![pipeline](https://lockmedown.com/wp-content/uploads/2017/02/request-pipeline.png)
+
 
 ### Building Our Own Middleware
 

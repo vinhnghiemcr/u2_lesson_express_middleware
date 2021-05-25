@@ -89,7 +89,7 @@ Add the following to your `app.js` in the `your code goes here` section.
 ```js
 app.use(cors())
 app.use(bodyParser.json())
-app.use(bodyParse.urlEncoded({ extended: true }))
+app.use(bodyParser.urlencoded({ extended: true }))
 ```
 
 By invoking the `.use()` method, we are telling our Express app to use these packages.

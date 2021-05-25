@@ -15,7 +15,6 @@ In this lesson we'll learn how to use functions called `middleware`. Middleware 
 ## Getting Started
 
 - Fork And Clone this repository
-- `cd` into your `Express-Middleware` folder
 - `npm i` or `npm install` to install the dependencies.
 - `npm run dev` to check your installation completed successfully.
 - Have either [Insomnia](https://insomnia.rest/download/core/?) or [Postman](https://www.postman.com/downloads/) ready to go!

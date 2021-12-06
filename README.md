@@ -17,7 +17,7 @@ In this lesson we'll learn how to use functions called `middleware`. Middleware 
 - Fork And Clone this repository
 - `npm i` or `npm install` to install the dependencies.
 - `npm run dev` to check your installation completed successfully.
-- Have either [Insomnia](https://insomnia.rest/download/core/?) or [Postman](https://www.postman.com/downloads/) ready to go!
+- Have either [Insomnia](https://insomnia.rest/download/core/?) ready to go!
   A basic Express app has been provided for you.
 
 ```js

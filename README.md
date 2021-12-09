@@ -50,22 +50,18 @@ Middleware can be described as a function that run's in the middle of a request 
 
 ### Utilizing 3rd Party Middleware
 
-Let's install some depedencies that we will use as `middleware`.
+Let's install a depedency that we will use as `middleware`.
 
 ```sh
-npm install cors body-parser
+npm install cors
 ```
 
-More on:
-
 - [cors](https://www.npmjs.com/package/cors)
-- [body-parser](https://www.npmjs.com/package/body-parser)
 
-Once the dependencies finish installing, we'll need to `require` them in our `app.js`.
+Once the dependency finishes installing, we'll need to `require` it in our `app.js`.
 
 ```js
 const express = require('express')
-const bodyParser = require('body-parser')
 const cors = require('cors')
 
 const app = express()
@@ -78,7 +74,7 @@ app.listen(PORT, () => {
 })
 ```
 
-Now that we have access to these packages we can utilize them in our express app.
+Now that we have access to this packages we can utilize it in our express app.
 
 Luckily Express makes it super easy for us to incorporate middleware.
 
@@ -88,8 +84,9 @@ Add the following to your `app.js` in the `your code goes here` section.
 
 ```js
 app.use(cors())
-app.use(bodyParser.json())
-app.use(bodyParser.urlencoded({ extended: true }))
+// the following middleware comes out of the box with express...
+app.use(express.json())
+app.use(express.urlencoded({ extended: false }))
 ```
 
 By invoking the `.use()` method, we are telling our Express app to use these packages.
@@ -97,7 +94,7 @@ By invoking the `.use()` method, we are telling our Express app to use these pac
 The `cors` package enables cross origin resource sharing for our app.
 Feel free to look this up on your own time.
 
-The `body-parser` package gives Express the ability to read various types of form data, the `json` method allows us to send json information to our server and the `urlEncoded` method allows us to send urlEncoded forms to our server.
+The `body-parser` gives Express the ability to read various types of form data, the `json` method allows us to send json information to our server and the `urlEncoded` method allows us to send urlEncoded forms to our server.
 
 More On the urlEncoded method here:
 [bodyParser.urlEncoded](https://github.com/expressjs/body-parser#bodyparserurlencodedoptions)

@@ -121,7 +121,7 @@ After the url, create a function and pass in 3 parameters, `request`, `response`
 app.get('/middleware', (request, response, next) => {})
 ```
 
-`next` is a function that tells express the call or invoke the next function.
+`next` is a function that tells express to call or invoke the next function.
 
 Inside of this function let's add a `console.log` and log `this is a middleware function` and invoke the `next` function.
 
@@ -132,7 +132,7 @@ app.get('/middleware', (request, response, next) => {
 })
 ```
 
-Now let's add the final function in our route. In this function pass in the `request` and `response` parameters and we'll `send` back a `reponse` with the string `request complete`.
+Now let's add the final function in our route. In this function, pass in the `request` and `response` parameters and we'll `send` back a `reponse` with the string `request completed`.
 
 ```js
 app.get(
@@ -153,7 +153,7 @@ You've just built your own middleware!
 
 ## You Do
 
-Create 4 routes, one for each `http` method. Each route should have their own middleware function that `console.log`'s the type of `http` method the route is for. Create a function after your middleware that sends a response saying: `the http type of {httpType} of request is complete`.
+Create 4 routes, one for each `http` method. Each route should have their own middleware function that `console.log`'s the type of `http` method the route is for. Create a function after your middleware that sends a response saying: `the http type of {httpType} request is complete`.
 
 ## Recap
 

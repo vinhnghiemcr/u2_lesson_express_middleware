@@ -127,7 +127,7 @@ Inside of this function let's add a `console.log` and log `this is a middleware 
 
 ```js
 app.get('/middleware', (request, response, next) => {
-  console, log('this is middleware')
+  console.log('this is middleware')
   next()
 })
 ```
@@ -138,7 +138,7 @@ Now let's add the final function in our route. In this function pass in the `req
 app.get(
   '/middleware',
   (request, response, next) => {
-    console, log('this is middleware')
+    console.log('this is middleware')
     next()
   },
   (req, res) => {

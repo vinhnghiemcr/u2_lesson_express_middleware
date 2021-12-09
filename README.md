@@ -1,6 +1,6 @@
 # Express Middleware
 
-![middleware](https://videos.teamtreehouse.com/stills/TH_RESTAPIwithExpress_S2V2-stills-4.jpg?token=61afd369_9da0962e55f1dfb72bdc7fa07126dfea8a9adf8d)
+![middleware](https://s3.ap-south-1.amazonaws.com/afteracademy-server-uploads/middleware-abc4d8076a46b47e.png)
 
 ## Overview
 

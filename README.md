@@ -94,10 +94,7 @@ By invoking the `.use()` method, we are telling our Express app to use these pac
 The `cors` package enables cross origin resource sharing for our app.
 Feel free to look this up on your own time.
 
-The `body-parser` gives Express the ability to read various types of form data, the `json` method allows us to send json information to our server and the `urlEncoded` method allows us to send urlEncoded forms to our server.
-
-More On the urlEncoded method here:
-[bodyParser.urlEncoded](https://github.com/expressjs/body-parser#bodyparserurlencodedoptions)
+The `json` method allows us to send json information to our server and the `urlEncoded` method allows us to send encoded forms to our server.
 
 We've successfully implemented 3rd party middleware with our app!
 
@@ -144,17 +141,17 @@ app.get(
 )
 ```
 
-Test this endpoint with either `insomnia` or `postman` and you'll see our `console.log` in the terminal and a response returned to your http client.
+Test this endpoint with `insomnia` and you'll see our `console.log` in the terminal and a response returned to your HTTP client.
 
 You've just built your own middleware!
 
 ## You Do
 
-Create 4 routes, one for each `http` method. Each route should have their own middleware function that `console.log`'s the type of `http` method the route is for. Create a function after your middleware that sends a response saying: `the http type of {httpType} request is complete`.
+Create 4 routes, one for each `HTTP` method. Each route should have their own middleware function that `console.log`'s the type of `HTTP` method the route is for. Create a function after your middleware that sends a response saying: `the HTTP type of {httpType} request is complete`.
 
 ## Recap
 
-In this lesson we built and utilized middleware. We implemented 3rd part middleware like `cors` and `body-parser`. We also built our own middleware functions.
+In this lesson we built and utilized middleware. We implemented 3rd part middleware like `cors`. We also built our own middleware functions.
 Remember `middleware` functions are functions that execute as long as there is a `next` function in the request stack.
 
 ## Resources
